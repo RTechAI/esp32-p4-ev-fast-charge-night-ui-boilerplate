@@ -1,3 +1,4 @@
+<img width="1287" height="755" alt="Splash_EV_Fast_Charge_Night" src="https://github.com/user-attachments/assets/538d98aa-fcbd-4300-9acd-eec511fa418d" />
 # ForgeUI Source Available License
 
 **Version 1.0**  
