@@ -1,322 +1,237 @@
-# ForgeUI One
+# ForgeUI Source Available License
 
-> **ForgeUI One is the official embedded runtime for ESP32-P4 UI Studio exports and the foundation for all official ForgeUI Boiler Plates.**
+**Version 1.0**  
+**SPDX-License-Identifier:** `LicenseRef-ForgeUI-Source-Available-1.0`
 
-Lightweight LVGL v9 starter framework and ESP-IDF runtime baseline for ESP32-P4 hardware.
-
-ForgeUI One provides a clean, hardware-proven embedded UI starting point for developers building touchscreen projects using **ESP-IDF** and **LVGL v9**.
-
-Current validated target hardware:
-
-- Waveshare ESP32-P4-WIFI6-Touch-LCD-7B
+Copyright © 2026 Scott Forster / ForgeUI. All rights reserved except as expressly permitted by this license.
 
 ---
 
-# What is ForgeUI One?
+# Overview
 
-ForgeUI One is intentionally designed as a minimal, stable, reusable ESP32-P4 runtime foundation.
+ForgeUI is a custom ESP32-P4 application framework, runtime engine, and UI architecture designed for embedded touchscreen products built with:
 
-The goal is simple:
-
-```text
-boot fast
-stay clean
-stay readable
-provide a stable starting point
-```
-
-ForgeUI One intentionally strips away large demo complexity and focuses on:
-
-- clean startup
-- stable display bring-up
-- touch integration
-- LVGL v9 runtime stability
-- simple UI structure
-- reusable architecture
-- fast experimentation
-- readable project layout
-- hardware-proven runtime behavior
-
----
-
-# Official ForgeUI Boiler Plates
-
-ForgeUI One powers every official **ForgeUI Boiler Plate**.
-
-Each boiler plate provides:
-
-- Hardware-proven firmware
-- Production-ready single-page HMI
-- Clean project structure
-- ESP-IDF build environment
-- LVGL v9 runtime
-- Ready for customisation and extension
-
-Boiler Plates are designed to accelerate development by providing complete working examples that can be cloned, modified, and used as the starting point for real embedded products.
-
----
-
-# Current Features
-
-Current ForgeUI One runtime baseline includes:
-
-- LVGL v9 runtime
-- Display operational
-- Touch operational
-- Single-page UI shell
-- Clean starter home screen
-- Modular source structure
-- ESP-IDF integration
-- Waveshare BSP integration
-- Generated UI insertion path
-- ESP32-P4 UI Studio export compatibility
-- Hardware-tested runtime pipeline
-
----
-
-# Runtime Role Inside ESP32-P4 UI Studio
-
-ForgeUI One operates as the embedded firmware runtime within the larger **ESP32-P4 UI Studio** ecosystem.
-
-Development pipeline:
-
-```text
-ESP32-P4 UI Studio
-        │
-        ▼
-Visual UI Design
-        │
-        ▼
-LVGL Code Generation
-        │
-        ▼
-ForgeUI One Runtime
-        │
-        ▼
-ESP-IDF Build
-        │
-        ▼
-Physical ESP32-P4 Hardware
-```
-
-ForgeUI One intentionally owns:
-
-- ESP-IDF project structure
-- LVGL runtime lifecycle
-- BSP integration
-- Display, touch and audio setup
-- Runtime application shell
-- Generated UI insertion points
-
-The visual editor and export pipeline remain intentionally separated from the embedded runtime.
-
----
-
-# Design Philosophy
-
-ForgeUI One favors:
-
-- Simplicity
-- Readability
-- Maintainability
-- Rapid experimentation
-- Fast hardware bring-up
-- Clean foundations
-- Modular runtime ownership
-
-ForgeUI One intentionally avoids:
-
-- Bloated demo systems
-- Tangled runtime ownership
-- Unnecessary abstraction layers
-- Hidden framework behaviour
-- Oversized UI architectures
-
----
-
-# Target Use Cases
-
-ForgeUI One is intended for:
-
-- New ESP32-P4 projects
-- LVGL learning
-- Touchscreen experiments
-- Kiosk systems
-- Embedded products
-- Industrial HMIs
-- Dashboard interfaces
-- Games
-- Proof-of-concept firmware
-- Hardware testing
-- Rapid prototyping
-- ESP32-P4 UI Studio generated projects
-
----
-
-# Hardware Support
-
-Current proven hardware support includes:
-
-- ESP32-P4
-- EK79007 Display Controller
-- GT911 Capacitive Touch
-- Waveshare ESP32-P4-WIFI6-Touch-LCD-7B
-
----
-
-# Software Stack
-
-Built using:
-
-- ESP-IDF v5.5.x
+- Espressif ESP-IDF
 - LVGL v9
-- Waveshare BSP ecosystem
-- Espressif managed components
+- Waveshare ESP32-P4 board support packages
+- ESP-Hosted networking
+- Related managed components
+
+ForgeUI provides a production-ready embedded software foundation, reusable runtime architecture, and hardware-proven UI framework for commercial and personal embedded development.
 
 ---
 
-# Project Structure
+# Permitted Use
 
-Current runtime structure:
+You may:
 
-```text
-ForgeUI-One/
-├── main/
-├── managed_components/
-├── CMakeLists.txt
-├── sdkconfig
-└── README.md
-```
-
-Important runtime files include:
-
-```text
-main/
-├── 01_FG_HMI.c
-├── 02_UI_Home.c
-├── 14_UI_Header.c
-├── 90_Studio_Export.c
-└── 90_Studio_Export.h
-```
+- Use ForgeUI for personal projects.
+- Use ForgeUI for educational purposes.
+- Use ForgeUI for evaluation and testing.
+- Use ForgeUI for internal commercial development.
+- Modify ForgeUI-owned source files.
+- Build commercial hardware and software products using ForgeUI.
+- Manufacture and sell products powered by ForgeUI.
+- Distribute compiled firmware binaries created using ForgeUI.
+- Keep your own application source code closed.
 
 ---
 
-# ESP32-P4 UI Studio Integration
+# Commercial Use
 
-ForgeUI One supports direct export integration from **ESP32-P4 UI Studio**.
+Commercial use is fully permitted.
 
-Generated UI files are automatically injected into:
+You may:
 
-```text
-main/90_Studio_Export.c
-main/90_Studio_Export.h
-```
+- Manufacture products using ForgeUI.
+- Sell commercial products built using ForgeUI.
+- Integrate ForgeUI into commercial embedded systems.
+- Modify ForgeUI to suit your products.
+- Distribute compiled firmware worldwide.
 
-The runtime compiles and renders the generated LVGL interface directly on physical hardware.
+You may **NOT**:
 
-This complete workflow has been physically validated on the ESP32-P4 platform.
-
----
-
-# Quick Start
-
-Set target:
-
-```bash
-idf.py set-target esp32p4
-```
-
-Build:
-
-```bash
-idf.py build
-```
-
-Flash:
-
-```bash
-idf.py flash monitor
-```
+- Redistribute ForgeUI source code as a competing framework.
+- Sell ForgeUI source code.
+- Repackage ForgeUI as a commercial development toolkit.
+- Create a competing starter kit based primarily on ForgeUI.
+- Remove copyright notices from ForgeUI-owned source files.
 
 ---
 
-# Current Status
+# Restrictions
 
-```text
-✔ ACTIVE DEVELOPMENT
+You may **NOT**:
 
-✔ HARDWARE PROVEN
-
-✔ STUDIO EXPORT VERIFIED
-
-✔ PHYSICAL ESP32-P4 DEPLOYMENT VERIFIED
-```
-
-Current milestone:
-
-```text
-ESP32-P4 UI Studio
-        │
-        ▼
-ForgeUI One Runtime
-        │
-        ▼
-Physical Hardware
-
-Pipeline Proven
-```
+- Publicly redistribute ForgeUI source code without written permission from the copyright holder.
+- Publish modified ForgeUI source code as another framework or toolkit.
+- Claim ForgeUI-owned code as your own work.
+- Misrepresent upstream third-party projects as ForgeUI-owned technology.
+- Remove required upstream license notices.
 
 ---
 
-# License
+# Third-Party Components
 
-ForgeUI One includes components and dependencies licensed under their respective open-source licences.
+ForgeUI incorporates and depends upon numerous outstanding open-source projects.
 
-Key integrated technologies include:
+These components remain the property of their respective copyright holders and continue to be licensed under their original licenses.
+
+Major upstream technologies include:
+
+- **Espressif ESP-IDF**
+  - Apache License 2.0
+  - https://www.espressif.com
+
+- **LVGL Graphics Library**
+  - MIT License
+  - https://lvgl.io
+
+- **Espressif Managed Components**
+  - esp_lvgl_port
+  - esp_lcd_ek79007
+  - esp_lcd_touch_gt911
+  - esp_hosted
+  - esp_wifi_remote
+  - esp_codec_dev
+  - and other managed dependencies
+
+- **Waveshare BSP Components**
+  - Display drivers
+  - Touch drivers
+  - Board support packages
+
+---
+
+# Upstream License Compliance
+
+ForgeUI does **NOT** claim ownership of:
 
 - ESP-IDF
 - LVGL
-- Waveshare BSP Components
+- Espressif managed components
+- Waveshare BSP components
+- Vendor drivers
+- Third-party libraries
+- Upstream examples
 
-Please review:
+All upstream copyright notices, SPDX identifiers, and license texts must remain intact where required by their original licenses.
 
-- LICENSE
-- THIRD_PARTY_LICENSES.md
+Users are responsible for complying with all applicable upstream licenses.
 
 ---
 
-# Developed By
+# ForgeUI Ownership Boundary
 
-## Scott Forster
+ForgeUI-owned intellectual property primarily exists within the application layer, including:
 
-**Creator of ForgeUI**
+- ForgeUI runtime modules
+- UI architecture
+- Theme engine
+- Theme assets
+- Runtime configuration
+- Layout system
+- Asset pipeline
+- Studio integration
+- Export pipeline
+- Boiler plate framework
+- Project architecture
+- Generated application scaffolding
 
-Projects include:
+Typically located within:
 
-- ESP32-P4 UI Studio
-- ForgeUI One Runtime
-- Official ForgeUI Boiler Plates
+```text
+main/
+```
 
-📧 **Email**
+excluding upstream files.
 
-forgeui.esp32@gmail.com
+The following directories remain primarily upstream managed:
 
-**GitHub**
+```text
+managed_components/
+```
+
+along with:
+
+- ESP-IDF build system
+- Vendor BSP implementations
+- LVGL internals
+- Third-party middleware
+
+---
+
+# Attribution
+
+Attribution to the ForgeUI project is appreciated and encouraged.
+
+Suggested examples include:
+
+- Powered by ForgeUI
+- Built using ForgeUI
+- Powered by ForgeUI One
+- Designed using ESP32-P4 UI Studio
+
+Commercial products are **not required** to display ForgeUI branding provided that:
+
+- ForgeUI source code is not redistributed contrary to this license.
+- ForgeUI copyright notices remain intact.
+- All upstream license obligations continue to be respected.
+
+---
+
+# No Warranty
+
+ForgeUI is provided **"AS IS"**, without warranty of any kind, express or implied, including but not limited to:
+
+- Merchantability
+- Fitness for a particular purpose
+- Non-infringement
+
+In no event shall the authors or copyright holders be liable for any claim, damages, or other liability arising from the use of this software.
+
+---
+
+# Contact
+
+**Scott Forster**
+
+Creator & Lead Architect — ForgeUI
+
+📧 forgeui.esp32@gmail.com
+
+GitHub:
 
 https://github.com/RTechAI
 
 ---
 
-# Support
+# License Summary
 
-If you build something with ForgeUI, discover a bug, have an idea for a feature, or simply want to share your project, I'd love to hear from you.
+✅ Personal use permitted
 
-Community feedback helps shape future releases of ForgeUI.
+✅ Educational use permitted
 
-📧 **forgeui.esp32@gmail.com**
+✅ Commercial use permitted
+
+✅ Closed-source commercial products permitted
+
+✅ Commercial hardware sales permitted
+
+✅ Modification permitted
+
+✅ Binary redistribution permitted
+
+❌ Public redistribution of ForgeUI source prohibited
+
+❌ Selling ForgeUI source prohibited
+
+❌ Repackaging ForgeUI as a competing framework prohibited
+
+❌ Removing copyright notices prohibited
 
 ---
 
 **Powered by ForgeUI**
 
-*Building the next generation of open-source embedded UI tools for ESP32-P4.*
+*Building the next generation of embedded visual UI development tools for ESP32-P4.*
