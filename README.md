@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 README
 # ESP32-P4 LVGL v9 UI Boilerplate — Cyberpunk Nexus Theme
+=======
+<img width="1287" height="755" alt="Splash_EV_Fast_Charge_Night" src="https://github.com/user-attachments/assets/538d98aa-fcbd-4300-9acd-eec511fa418d" />
+# ForgeUI Source Available License
+>>>>>>> 23336d14e4f3be27210fa4f82296ef577d28445c
 
 Hardware-proven ESP32-P4 LVGL v9 UI boilerplate featuring the **EV Fast Charge Night** theme for the **Waveshare ESP32-P4-WIFI6-Touch-LCD-7B** (7-inch 1024×600).
 
@@ -128,4 +133,44 @@ Author:
 
 Scott Forster
 
+<<<<<<< HEAD
 📧 forgeui.esp32@gmail.com
+=======
+📧 forgeui.esp32@gmail.com
+
+GitHub:
+
+https://github.com/RTechAI
+
+---
+
+# License Summary
+
+✅ Personal use permitted
+
+✅ Educational use permitted
+
+✅ Commercial use permitted
+
+✅ Closed-source commercial products permitted
+
+✅ Commercial hardware sales permitted
+
+✅ Modification permitted
+
+✅ Binary redistribution permitted
+
+❌ Public redistribution of ForgeUI source prohibited
+
+❌ Selling ForgeUI source prohibited
+
+❌ Repackaging ForgeUI as a competing framework prohibited
+
+❌ Removing copyright notices prohibited
+
+---
+
+**Powered by ForgeUI**
+
+*Building the next generation of embedded visual UI development tools for ESP32-P4.*
+>>>>>>> 23336d14e4f3be27210fa4f82296ef577d28445c
